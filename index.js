@@ -27,6 +27,8 @@ app.use("/api/nc", require('./routes/newscategory'))
 app.use("/api/nt", require('./routes/newstype'))
 
 app.use('/api/items', require('./routes/items'))
+app.use("/api/interest", require('./routes/interest'))
+
 
 
 app.get("/", (req, res) => {

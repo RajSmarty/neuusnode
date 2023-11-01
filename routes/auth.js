@@ -35,7 +35,7 @@ router.post('/signup', async (req, res) => {
     }
   }
   const authtoken = jwt.sign(data, JWT_SECRET);
-
+  return authtoken;
   res.json({ authtoken })
 })
 
